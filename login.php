@@ -1,0 +1,73 @@
+<?php
+include('connection.php');
+session_start();
+
+$form_data = json_decode(file_get_contents("php://input"));
+
+$validation_error = '';
+
+if(empty($form_data->email))
+{
+  $error[] = 'Enter e-mail';
+}
+else
+{
+  if(!filter_var($form_data->email, FILTER_VALIDATE_EMAIL))
+  {
+   $error[] = 'Enter valid e-mail format';
+  }
+  else
+  {
+   $data[':email'] = $form_data->email;
+  }
+}
+
+if(empty($form_data->password))
+{
+  $error[] = 'Enter password';
+}
+
+if(empty($error))
+{
+  $query = "SELECT * FROM users WHERE email = :email";
+  $statement = $oConnection->prepare($query);
+  if($statement->execute($data))
+  {
+    $result = $statement->fetchAll();
+    if($statement->rowCount() > 0)
+    {
+      foreach($result as $row)
+      {
+        if(password_verify($form_data->password, $row["password"]))
+        {
+          $_SESSION["id"] = $row["id"];
+          $_SESSION["name"] = $row["name"];
+          $_SESSION["surname"] = $row["surname"];
+          $_SESSION["nickname"] = $row["nickname"];
+          $_SESSION["email"] = $row["email"];
+          $_SESSION["password"] = $row["password"];
+          $_SESSION["isAdmin"] = $row["isAdmin"];
+        }
+        else
+        {
+         $validation_error = 'Wrong password';
+        }
+      }
+    }
+    else
+    {
+      $validation_error = 'Wrong e-mail';
+    }
+  }
+}
+else
+{
+  $validation_error = implode(", ", $error);
+}
+
+$output = array(
+  'error' => $validation_error
+);
+
+echo json_encode($output);
+?>

@@ -1,0 +1,350 @@
+*
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-custom
+{
+    font-weight: 700;
+}
+a:hover
+{
+    cursor: pointer;
+}
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+table
+{
+    text-align: center;
+}
+.tableHome
+{
+    width: 40%;
+    height: 40%;
+    position: fixed;
+    margin-left: 20%;
+    margin-top: 20%;
+    top: -10%;
+    left: 10%;
+    font-size: 300%;
+    color: #f2f2f2;
+}
+.tableHome thead tr th
+{
+    font-weight: 900;
+    font-size: 200%;
+}
+.tableHome tbody tr th
+{
+    font-weight: 900;
+}
+.tableHome tbody tr th:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-form
+{
+	width: 340px;
+    margin: 50px auto;
+}
+.btn-purple
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #46178f;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.btn-purple:hover
+{
+    color: #f2f2f2;
+    opacity: 1;
+}
+.alert:hover
+{
+    cursor: pointer;
+}
+.tableAbout
+{
+    margin: auto;
+    width: 50%;
+    color: #f2f2f2;
+    border: solid #f2f2f2;
+}
+.tableAbout th, .tableAbout td
+{
+    border: solid #f2f2f2;
+}
+.tableAboutChild
+{
+    width: 70%;
+    color: #f2f2f2;
+    border: solid #f2f2f2;
+}
+.listSpeech
+{
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 400px;
+}
+.btn-speech
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+.btn-speech:hover
+{
+    background-color: #333333;
+    color: #f2f2f2;
+}
+.speechText, .tryAgain
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+.tableKvizli
+{
+    margin: auto;
+    width: 30%;
+    border-collapse: separate; 
+    border-spacing: 0 15px;
+}
+.tableKvizli thead tr th
+{
+    font-weight: 900;
+    font-size: 150%;
+}
+.tableKvizli tbody tr:nth-child(1)
+{
+    background-color: #e21b3c;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.tableKvizli tbody tr:nth-child(1):hover
+{
+    opacity: 1;
+}
+.tableKvizli tbody tr:nth-child(2)
+{
+    background-color: #1368ce;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.tableKvizli tbody tr:nth-child(2):hover
+{
+    opacity: 1;
+}
+.tableKvizli tbody tr:nth-child(3)
+{
+    background-color: #ffa602;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.tableKvizli tbody tr:nth-child(3):hover
+{
+    opacity: 1;
+}
+.tableKvizli tbody tr:nth-child(4)
+{
+    background-color: #26890c;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.tableKvizli tbody tr:nth-child(4):hover
+{
+    opacity: 1;
+}
+.btn-answer
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+.btn-answer:hover
+{
+    color: #f2f2f2;
+}
+.btn-green
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #26890c;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.btn-red
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #e21b3c;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.btn-green:hover, .btn-red:hover
+{
+    color: #f2f2f2;
+    opacity: 1;
+}
+.modal-header
+{
+    background-color: #f2f2f2;
+}
+.modal-title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+.modal-body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+.modal-footer
+{
+    background-color: #f2f2f2;
+}
+.modal-dialog
+{
+    background-color: #f2f2f2;
+}
+.btn-gray
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #333333;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.btn-gray:hover
+{
+    color: #f2f2f2;
+    opacity: 1;
+}
+.tableKvizliCongratulations
+{
+    position: absolute;
+    top: 20%;
+    font-size: 300%;
+}
+.tableHighscore
+{
+    margin: auto;
+    width: 50%;
+    color: #f2f2f2;
+}
+.tableHighscore thead tr th
+{
+    font-weight: 700;
+}
+.tableDashboard
+{
+    width: 30%;
+    height: 30%;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 15%;
+    top: 0%;
+    left: 20%;
+}
+.tableDashboard thead
+{
+    color: #46178f;
+    font-size: 300%;
+}
+.tableManageUsers
+{
+    color: #46178f;
+}
+.tableManageUsers thead tr th
+{
+    font-weight: 700;
+}
+.tableManageUsers tbody tr:hover
+{
+    color: #333333;
+}
+.btn-blue
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #1368ce;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+.btn-blue:hover
+{
+    color: #f2f2f2;
+    opacity: 1;
+}
+.form-control
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    opacity: 1;
+}
+.form-control[readonly]
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color:rgba(70, 23, 143, 0.1);
+}
+.formSearch
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.tableManageUsers thead tr th
+{
+    cursor: pointer;
+}
+.arrow-up
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #333333;
+    display: inline-block;
+}
+.arrow-down
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #333333;
+    display: inline-block;
+}
+.tableAskedQuestions
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    width: 400px;
+}
+#tbodyHideQuestions
+{
+    display: none;
+}
+#tableHoverQuestions:hover #tbodyHideQuestions
+{
+    display: block;
+}
